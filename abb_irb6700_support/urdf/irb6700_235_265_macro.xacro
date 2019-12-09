@@ -14,7 +14,7 @@
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://abb_irb6700_support/meshes/irb6700/collision/base_link.stl" />
+          <convex_mesh filename="package://abb_irb6700_support/meshes/irb6700/collision/base_link.stl" convert="true"/>
         </geometry>
         <xacro:material_abb_yellow/>
       </collision>
@@ -30,7 +30,7 @@
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://abb_irb6700_support/meshes/irb6700/collision/link_1.stl" />
+          <convex_mesh filename="package://abb_irb6700_support/meshes/irb6700/collision/link_1.stl" convert="true"/>
         </geometry>
         <xacro:material_abb_yellow/>
       </collision>
@@ -46,7 +46,7 @@
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://abb_irb6700_support/meshes/irb6700/collision/cylinder.stl" />
+          <convex_mesh filename="package://abb_irb6700_support/meshes/irb6700/collision/cylinder.stl" convert="true"/>
         </geometry>
         <xacro:material_abb_yellow/>
       </collision>
@@ -62,7 +62,7 @@
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://abb_irb6700_support/meshes/irb6700/collision/piston.stl" />
+          <convex_mesh filename="package://abb_irb6700_support/meshes/irb6700/collision/piston.stl" convert="true"/>
         </geometry>
         <xacro:material_abb_yellow/>
       </collision>
@@ -78,7 +78,7 @@
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://abb_irb6700_support/meshes/irb6700_235_265/collision/link_2.stl" />
+          <convex_mesh filename="package://abb_irb6700_support/meshes/irb6700_235_265/collision/link_2.stl" convert="true"/>
         </geometry>
         <xacro:material_abb_yellow/>
       </collision>
@@ -94,7 +94,7 @@
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://abb_irb6700_support/meshes/irb6700_235_265/collision/link_3.stl" />
+          <convex_mesh filename="package://abb_irb6700_support/meshes/irb6700_235_265/collision/link_3.stl" convert="true"/>
         </geometry>
         <xacro:material_abb_yellow/>
       </collision>
@@ -110,7 +110,7 @@
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://abb_irb6700_support/meshes/irb6700_235_265/collision/link_4.stl" />
+          <convex_mesh filename="package://abb_irb6700_support/meshes/irb6700_235_265/collision/link_4.stl" convert="true"/>
         </geometry>
         <xacro:material_abb_yellow/>
       </collision>
@@ -126,7 +126,7 @@
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://abb_irb6700_support/meshes/irb6700/collision/link_5.stl" />
+          <convex_mesh filename="package://abb_irb6700_support/meshes/irb6700/collision/link_5.stl" convert="true"/>
         </geometry>
         <xacro:material_abb_yellow/>
       </collision>
@@ -142,7 +142,7 @@
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://abb_irb6700_support/meshes/irb6700/collision/link_6.stl" />
+          <convex_mesh filename="package://abb_irb6700_support/meshes/irb6700/collision/link_6.stl" convert="true"/>
         </geometry>
         <xacro:material_abb_yellow/>
       </collision>
