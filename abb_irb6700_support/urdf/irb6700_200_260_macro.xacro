@@ -149,43 +149,50 @@
     </link>
     <link name="${prefix}tool0"/>
 
+    <xacro:property name="cal" value="${load_yaml('$(find abb_irb6700_support)/config/calibration_irb6700_200_260.yaml')}" />
+
     <joint name="${prefix}joint_1" type="revolute">
-      <origin xyz="0 0 0.78" rpy="0 0 0" />
+      <origin xyz="${0 + cal['j1']['x']} ${0 + cal['j1']['y']} ${0.78 + cal['j1']['z']}" rpy="${0 + cal['j1']['rx']} ${0 + cal['j1']['ry']} ${0 + cal['j1']['rz']}" />
       <parent link="${prefix}base_link" />
       <child link="${prefix}link_1" />
       <axis xyz="0 0 1" />
       <limit lower="-${radians(170)}" upper="${radians(170)}" effort="0" velocity="${radians(100)}" />
     </joint>
     <joint name="${prefix}joint_2" type="revolute">
-      <origin xyz="0.32 0 0" rpy="0 0 0" />
+<!--      <origin xyz="0.32 0 0" rpy="0 0 0" />-->
+      <origin xyz="${0.32 + cal['j2']['x']} ${0 + cal['j2']['y']} ${0.0 + cal['j2']['z']}" rpy="${0 + cal['j2']['rx']} ${0 + cal['j2']['ry']} ${0 + cal['j2']['rz']}" />
       <parent link="${prefix}link_1" />
       <child link="${prefix}link_2" />
       <axis xyz="0 1 0" />
       <limit lower="-${radians(65)}" upper="${radians(85)}" effort="0" velocity="${radians(90)}" />
     </joint>
     <joint name="${prefix}joint_3" type="revolute">
-      <origin xyz="0 0 1.125" rpy="0 0 0" />
+<!--      <origin xyz="0 0 1.125" rpy="0 0 0" />-->
+      <origin xyz="${0 + cal['j3']['x']} ${0 + cal['j3']['y']} ${1.125 + cal['j3']['z']}" rpy="${0 + cal['j3']['rx']} ${0 + cal['j3']['ry']} ${0 + cal['j3']['rz']}" />
       <parent link="${prefix}link_2" />
       <child link="${prefix}link_3" />
       <axis xyz="0 1 0" />
       <limit lower="-${radians(180)}" upper="${radians(70)}" effort="0" velocity="${radians(90)}" />
     </joint>
     <joint name="${prefix}joint_4" type="revolute">
-      <origin xyz="0 0 0.2" rpy="0 0 0" />
+<!--      <origin xyz="0 0 0.2" rpy="0 0 0" />-->
+      <origin xyz="${0 + cal['j4']['x']} ${0 + cal['j4']['y']} ${0.2 + cal['j4']['z']}" rpy="${0 + cal['j4']['rx']} ${0 + cal['j4']['ry']} ${0 + cal['j4']['rz']}" />
       <parent link="${prefix}link_3" />
       <child link="${prefix}link_4" />
       <axis xyz="1 0 0" />
       <limit lower="-${radians(300)}" upper="${radians(300)}" effort="0" velocity="${radians(170)}" />
     </joint>
     <joint name="${prefix}joint_5" type="revolute">
-      <origin xyz="1.1425 0 0" rpy="0 0 0" />
+<!--      <origin xyz="1.1425 0 0" rpy="0 0 0" />-->
+      <origin xyz="${1.1425 + cal['j5']['x']} ${0 + cal['j5']['y']} ${0.0 + cal['j5']['z']}" rpy="${0 + cal['j5']['rx']} ${0 + cal['j5']['ry']} ${0 + cal['j5']['rz']}" />
       <parent link="${prefix}link_4" />
       <child link="${prefix}link_5" />
       <axis xyz="0 1 0" />
       <limit lower="-${radians(130)}" upper="${radians(130)}" effort="0" velocity="${radians(120)}" />
     </joint>
     <joint name="${prefix}joint_6" type="revolute">
-      <origin xyz="0.2 0 0" rpy="0 0 0" />
+<!--      <origin xyz="0.2 0 0" rpy="0 0 0" />-->
+      <origin xyz="${0.2 + cal['j6']['x']} ${0 + cal['j6']['y']} ${0.0 + cal['j6']['z']}" rpy="${0 + cal['j6']['rx']} ${0 + cal['j6']['ry']} ${0 + cal['j6']['rz']}" />
       <parent link="${prefix}link_5" />
       <child link="${prefix}link_6" />
       <axis xyz="1 0 0" />
